@@ -2,12 +2,11 @@ import * as templates from './utils/templates.js';
 import * as functions from './utils/functions.js';
 
 export default class TodoCount {
-  constructor({ data, filteredData, filterType, $target, $targetTodoFilters }) {
+  constructor({ data, filteredData, filterType, $target }) {
     this.data = data;
     this.filteredData = filteredData;
     this.filterType = filterType;
     this.$target = $target;
-    this.$targetTodoFilters = $targetTodoFilters;
 
     this.render();
   }

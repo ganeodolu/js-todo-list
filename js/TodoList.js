@@ -8,7 +8,6 @@ export default class TodoList {
     filteredData,
     filterType,
     $target,
-    $targetTodoFilters,
     $targetTodoToggleAll,
     onToggle,
     onToggleAll,
@@ -19,7 +18,6 @@ export default class TodoList {
     this.filteredData = filteredData;
     this.filterType = filterType;
     this.$target = $target;
-    this.$targetTodoFilters = $targetTodoFilters;
     this.$targetTodoToggleAll = $targetTodoToggleAll;
 
     this.$target.addEventListener('click', (e) => {
